@@ -1,4 +1,4 @@
-package computerdatabase.pageobjects
+package com.solvd.computerdatabase.pageobjects
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._

@@ -1,10 +1,10 @@
-package computerdatabase.simulations
+package com.solvd.computerdatabase.simulations
 
-import computerdatabase.pageobjects.{SaveProduct, SearchProduct}
+import com.solvd.computerdatabase.pageobjects.{SaveProduct, SearchProduct}
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
-class RecordedSimulation extends Simulation {
+class SaveProductSimulation extends Simulation {
 
   private val httpProtocol = http
     .baseUrl("http://computer-database.gatling.io")

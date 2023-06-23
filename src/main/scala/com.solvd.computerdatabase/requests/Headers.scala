@@ -1,4 +1,4 @@
-package computerdatabase.requests
+package com.solvd.computerdatabase.requests
 
 object Headers {
   val headers_0 = Map(

@@ -1,8 +1,7 @@
-package computerdatabase
+package com.solvd.computerdatabase
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
-import scala.concurrent.duration._
 
 class BasicItSimulation extends Simulation {
 

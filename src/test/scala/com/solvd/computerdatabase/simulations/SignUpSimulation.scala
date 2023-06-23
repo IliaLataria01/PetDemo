@@ -1,7 +1,7 @@
-package computerdatabase.simulations
+package com.solvd.computerdatabase.simulations
 
-import computerdatabase.requests.Headers.{headers_0, uri7}
-import computerdatabase.requests.NumberRequestGenerator
+import com.solvd.computerdatabase.requests.Headers.{headers_0, uri7}
+import com.solvd.computerdatabase.requests.NumberRequestGenerator
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 
