@@ -1,9 +1,9 @@
 package com.solvd.computerdatabase.requests
 
+import com.solvd.computerdatabase.requests.Headers._
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._
 import io.gatling.http.request.builder.HttpRequestBuilder
-import Headers._
 
 
 object NumberRequestGenerator {
