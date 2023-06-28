@@ -1,4 +1,4 @@
-package com.solvd.computerdatabase.load.models
+package com.solvd.computerdatabase.load.models.store
 
 import io.gatling.core.Predef._
 import io.gatling.http.Predef._

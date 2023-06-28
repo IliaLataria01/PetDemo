@@ -1,4 +1,4 @@
-package com.solvd.computerdatabase.load.models
+package com.solvd.computerdatabase.load.models.store
 
 import com.solvd.computerdatabase.load.util.ConfigUtil
 

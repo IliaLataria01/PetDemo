@@ -1,6 +1,7 @@
 package com.solvd.computerdatabase.load
 
-import com.solvd.computerdatabase.load.models.HomePage
+import com.solvd.computerdatabase.load.models.eCommerce.EHomePage
+import com.solvd.computerdatabase.load.models.store.HomePage
 import com.solvd.computerdatabase.load.util.ConfigUtil
 import io.gatling.core.Predef._
 import io.gatling.core.scenario.Simulation
@@ -41,10 +42,36 @@ class BaseSimulation extends Simulation with ConfigUtil{
     }
   }
 
+  /***
+   *
+   * Computer's Demo site
+   *
+   *
+   */
+
   lazy val search = exec(HomePage.searchProduct)
 
   lazy val edit = exec(HomePage.editProduct)
 
   lazy val browse = exec(HomePage.browseProduct)
+
+
+  /***
+   *
+   *  eCommerce Demo site
+   *
+   *
+   */
+
+  lazy val visitHomePage = exec(EHomePage.visitHomePage)
+  lazy val visitAboutUsPage = exec(EHomePage.visitAboutUsPage)
+  lazy val visitContactPage = exec(EHomePage.visitContactPage)
+  lazy val visitAPIPage = exec(EHomePage.visitAPIPage)
+
+  lazy val selectAll = exec(EHomePage.selectAllProducts)
+  lazy val selectOnlyForHim = exec(EHomePage.selectOnlyBoyProducts)
+  lazy val selectOnlyForHer = exec(EHomePage.selectOnlyGirlProducts)
+  lazy val selectUnisex = exec(EHomePage.selectUnisexProducts)
+
 
 }

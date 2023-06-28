@@ -1,4 +1,4 @@
-package com.solvd.computerdatabase.load.scenario
+package com.solvd.computerdatabase.load.scenario.store
 
 import com.solvd.computerdatabase.load.BaseSimulation
 import io.gatling.core.Predef.scenario
