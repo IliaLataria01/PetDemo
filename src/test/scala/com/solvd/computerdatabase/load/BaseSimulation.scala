@@ -1,6 +1,6 @@
 package com.solvd.computerdatabase.load
 
-import com.solvd.computerdatabase.load.models.eCommerce.EHomePage
+import com.solvd.computerdatabase.load.models.eCommerce.{EHomePage, ELoginPage}
 import com.solvd.computerdatabase.load.models.store.HomePage
 import com.solvd.computerdatabase.load.util.ConfigUtil
 import io.gatling.core.Predef._
@@ -72,6 +72,8 @@ class BaseSimulation extends Simulation with ConfigUtil{
   lazy val selectOnlyForHim = exec(EHomePage.selectOnlyBoyProducts)
   lazy val selectOnlyForHer = exec(EHomePage.selectOnlyGirlProducts)
   lazy val selectUnisex = exec(EHomePage.selectUnisexProducts)
+
+  lazy val login = exec(ELoginPage.clickLogin)
 
 
 }
