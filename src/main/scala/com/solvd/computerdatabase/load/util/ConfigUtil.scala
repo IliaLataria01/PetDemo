@@ -18,6 +18,7 @@ trait ConfigUtil extends StrictLogging{
 
   val loginQueries = conf.getString("sf.loginQueries")
 
+  val productQueries = conf.getString("sf.productQueries")
 
   def getIntValueFromConfig(path: String) = conf.getInt(path)
 
